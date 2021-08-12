@@ -3,9 +3,11 @@ package com.techreturners.BubbleTeaOrderService;
 public class BubbleTeaOrderService {
 
     private SimpleLoggerImpl simpleLogger;
+    private BubbleTeaMessenger bubbleTeaMessenger;
 
-    public BubbleTeaOrderService(SimpleLoggerImpl simpleLogger) {
+    public BubbleTeaOrderService(SimpleLoggerImpl simpleLogger, BubbleTeaMessenger bubbleTeaMessenger) {
         this.simpleLogger = simpleLogger;
+        this.bubbleTeaMessenger = bubbleTeaMessenger;
     }
 
     public BubbleTeaOrderRequest createOrderRequest(BubbleTeaRequest bubbleTeaRequest) {
@@ -23,8 +25,14 @@ public class BubbleTeaOrderService {
         simpleLogger.addLoggingText("The following Bubble Tea Order Request has been created "
                 + orderRequest.toString());
 
+        sendEmail(orderRequest);
+
         return orderRequest;
 
+    }
+
+    private void sendEmail(BubbleTeaOrderRequest bubbleTeaOrderRequest) {
+        bubbleTeaMessenger.sendBubbleTeaOrderRequestEmail(bubbleTeaOrderRequest);
     }
 
 }

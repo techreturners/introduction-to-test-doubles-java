@@ -2,7 +2,8 @@ import com.techreturners.BubbleTeaOrderService.*;
 import org.junit.Test;
 import testHelpers.DummySimpleLogger;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
 
 public class BubbleTeaOrderRequestServiceShould {
 
@@ -15,9 +16,11 @@ public class BubbleTeaOrderRequestServiceShould {
         BubbleTea bubbleTea = new BubbleTea(BubbleTeaTypeEnum.OolongMilkTea, 4.5);
         BubbleTeaRequest bubbleTeaRequest = new BubbleTeaRequest(paymentDetails, bubbleTea);
         DummySimpleLogger dummySimpleLogger = new DummySimpleLogger();
+        BubbleTeaMessenger mockMessenger = mock(BubbleTeaMessenger.class);
 
         //Dummy Simple Logger injected into BubbleTeaOrderService
-        BubbleTeaOrderService bubbleTeaOrderService = new BubbleTeaOrderService(dummySimpleLogger);
+        //mockMessenger injected into BubbleTeaOrderService
+        BubbleTeaOrderService bubbleTeaOrderService = new BubbleTeaOrderService(dummySimpleLogger, mockMessenger);
 
         //Act
         BubbleTeaOrderRequest result = bubbleTeaOrderService.createOrderRequest(bubbleTeaRequest);
@@ -33,5 +36,8 @@ public class BubbleTeaOrderRequestServiceShould {
         assertEquals(expectedResult.getAddress(), result.getAddress());
         assertEquals(expectedResult.getDebitCardDigits(), result.getDebitCardDigits());
         assertEquals(expectedResult.getBubbleTeaType(), result.getBubbleTeaType());
+
+        //Verify Mock
+        verify(mockMessenger).sendBubbleTeaOrderRequestEmail(result);
     }
 }
