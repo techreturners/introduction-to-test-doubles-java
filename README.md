@@ -1,4 +1,4 @@
-# introduction-to-test-doubles
+# introduction-to-test-doubles-java
 
 Plan:
 - Bubble Tea Order Service
