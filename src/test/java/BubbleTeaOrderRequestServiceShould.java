@@ -37,7 +37,9 @@ public class BubbleTeaOrderRequestServiceShould {
         assertEquals(expectedResult.getDebitCardDigits(), result.getDebitCardDigits());
         assertEquals(expectedResult.getBubbleTeaType(), result.getBubbleTeaType());
 
-        //Verify Mock
+        //Verify Mock was called with BubbleTeaOrderRequest result
         verify(mockMessenger).sendBubbleTeaOrderRequestEmail(result);
+        verify(mockMessenger, times(1)).sendBubbleTeaOrderRequestEmail(result);
     }
+
 }
