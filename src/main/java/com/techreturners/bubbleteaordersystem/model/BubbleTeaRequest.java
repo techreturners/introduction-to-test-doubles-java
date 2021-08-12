@@ -2,20 +2,20 @@ package com.techreturners.bubbleteaordersystem.model;
 
 public class BubbleTeaRequest {
 
-    private final PaymentDetails paymentDetails;
-    private final BubbleTea bubbleTea;
+    private final PaymentDetails PAYMENTDETAILS;
+    private final BubbleTea BUBBLETEA;
 
     public BubbleTeaRequest(PaymentDetails paymentDetails, BubbleTea bubbleTea) {
-        this.paymentDetails = paymentDetails;
-        this.bubbleTea = bubbleTea;
+        this.PAYMENTDETAILS = paymentDetails;
+        this.BUBBLETEA = bubbleTea;
     }
 
     public PaymentDetails getPaymentDetails() {
-        return this.paymentDetails;
+        return this.PAYMENTDETAILS;
     }
 
     public BubbleTea getBubbleTea() {
-        return this.bubbleTea;
+        return this.BUBBLETEA;
     }
 
 }

@@ -2,36 +2,36 @@ package com.techreturners.bubbleteaordersystem.model;
 
 public class BubbleTeaOrderRequest {
 
-    private final String name;
-    private final String address;
-    private final String debitCardDigits;
-    private final BubbleTeaTypeEnum bubbleTeaType;
+    private final String NAME;
+    private final String ADDRESS;
+    private final String DEBITCARDDIGITS;
+    private final BubbleTeaTypeEnum BUBBLETEATYPE;
 
     public BubbleTeaOrderRequest(
             String name,
             String address,
             String debitCardDigits,
             BubbleTeaTypeEnum bubbleTeaType) {
-        this.name = name;
-        this.address = address;
-        this.debitCardDigits = debitCardDigits;
-        this.bubbleTeaType = bubbleTeaType;
+        this.NAME = name;
+        this.ADDRESS = address;
+        this.DEBITCARDDIGITS = debitCardDigits;
+        this.BUBBLETEATYPE = bubbleTeaType;
     }
 
     public String getName() {
-        return this.name;
+        return this.NAME;
     }
 
     public String getAddress() {
-        return this.address;
+        return this.ADDRESS;
     }
 
     public String getDebitCardDigits() {
-        return this.debitCardDigits;
+        return this.DEBITCARDDIGITS;
     }
 
     public BubbleTeaTypeEnum getBubbleTeaType() {
-        return this.bubbleTeaType;
+        return this.BUBBLETEATYPE;
     }
 
 }

@@ -2,14 +2,14 @@ package com.techreturners.bubbleteaordersystem.model;
 
 public class DebitCard {
 
-    private final String digits;
+    private final String DIGITS;
 
     public DebitCard(String digits) {
-        this.digits = digits;
+        this.DIGITS = digits;
     }
 
     public String getDigits() {
-        return this.digits;
+        return this.DIGITS;
     }
 
 }

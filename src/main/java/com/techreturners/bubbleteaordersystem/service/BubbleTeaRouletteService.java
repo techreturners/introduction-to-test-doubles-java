@@ -6,15 +6,15 @@ import java.util.Random;
 
 public class BubbleTeaRouletteService {
 
-    private final Random random;
-    private final int size = BubbleTeaTypeEnum.values().length;
+    private final Random RANDOM;
+    private final int SIZE = BubbleTeaTypeEnum.values().length;
 
     public BubbleTeaRouletteService(Random random) {
-        this.random = random;
+        this.RANDOM = random;
     }
 
     public BubbleTeaTypeEnum getRandomBubbleTeaType() {
-        return BubbleTeaTypeEnum.values()[random.nextInt(size)];
+        return BubbleTeaTypeEnum.values()[RANDOM.nextInt(SIZE)];
     }
 
 }

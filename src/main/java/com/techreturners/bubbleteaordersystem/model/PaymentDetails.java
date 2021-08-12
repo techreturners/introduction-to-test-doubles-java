@@ -2,26 +2,26 @@ package com.techreturners.bubbleteaordersystem.model;
 
 public class PaymentDetails {
 
-    private final String name;
-    private final String address;
-    private final DebitCard debitCard;
+    private final String NAME;
+    private final String ADDRESS;
+    private final DebitCard DEBITCARD;
 
     public PaymentDetails(String name, String address, DebitCard debitCard) {
-        this.name = name;
-        this.address = address;
-        this.debitCard = debitCard;
+        this.NAME = name;
+        this.ADDRESS = address;
+        this.DEBITCARD = debitCard;
     }
 
     public String getName() {
-        return this.name;
+        return this.NAME;
     }
 
     public String getAddress() {
-        return this.address;
+        return this.ADDRESS;
     }
 
     public DebitCard getDebitCard() {
-        return this.debitCard;
+        return this.DEBITCARD;
     }
 
 }

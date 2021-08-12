@@ -2,20 +2,20 @@ package com.techreturners.bubbleteaordersystem.model;
 
 public class BubbleTea {
 
-    private final BubbleTeaTypeEnum bubbleTeaType;
-    private final Double unitPrice;
+    private final BubbleTeaTypeEnum BUBBLETEATYPE;
+    private final Double UNITPRICE;
 
     public BubbleTea(BubbleTeaTypeEnum bubbleTeaType, Double unitPrice) {
-        this.bubbleTeaType = bubbleTeaType;
-        this.unitPrice = unitPrice;
+        this.BUBBLETEATYPE = bubbleTeaType;
+        this.UNITPRICE = unitPrice;
     }
 
     public BubbleTeaTypeEnum getBubbleTeaType() {
-        return this.bubbleTeaType;
+        return this.BUBBLETEATYPE;
     }
 
     public Double getUnitPrice() {
-        return this.unitPrice;
+        return this.UNITPRICE;
     }
 
 }
