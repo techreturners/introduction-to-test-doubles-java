@@ -1,11 +1,13 @@
-import com.techreturners.BubbleTeaOrderService.*;
-import org.junit.Test;
-import testHelpers.DummySimpleLogger;
+import com.techreturners.bubbleteaordersystem.model.*;
+import com.techreturners.bubbleteaordersystem.service.BubbleTeaMessenger;
+import com.techreturners.bubbleteaordersystem.service.BubbleTeaOrderService;
+import org.junit.jupiter.api.Test;
+import testhelper.DummySimpleLogger;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
-public class BubbleTeaOrderRequestServiceShould {
+public class BubbleTeaOrderRequestServiceTest {
 
     @Test
     public void create_bubble_tea_order_request_when_createOrderRequest_is_called() {

@@ -1,4 +1,22 @@
-# introduction-to-test-doubles-java
+# Introduction to Test Doubles - Java track
+
+## Introduction
+
+This repo is designed to enable you to explore the different kinds of Test Doubles used in the context of testing.
+
+## Welcome to the Simplified Bubble Tea Order Service System
+You will be exploring a simplified version of a Bubble Tea Order Service System.
+
+## How to Get Started
+
+1. Fork this repo
+2. Work through the activities in the [activities folder](/activities).
+
+## What's Next?
+Feel free to head back to review the concepts again. We encourage you to do some of your own research and experimentation in your own time to explore these concepts further.
+
+
+---
 
 Plan:
 - Bubble Tea Order Service

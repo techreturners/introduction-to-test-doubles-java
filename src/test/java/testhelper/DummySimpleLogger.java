@@ -1,6 +1,6 @@
-package testHelpers;
+package testhelper;
 
-import com.techreturners.BubbleTeaOrderService.SimpleLoggerImpl;
+import com.techreturners.bubbleteaordersystem.model.SimpleLoggerImpl;
 
 //This is a DummySimpleLogger
 //Represents the Test Double type Dummy

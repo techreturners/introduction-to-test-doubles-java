@@ -1,4 +1,4 @@
-package com.techreturners.BubbleTeaOrderService;
+package com.techreturners.bubbleteaordersystem.app;
 
 public class Main {
 

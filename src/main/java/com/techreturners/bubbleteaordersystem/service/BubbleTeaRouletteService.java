@@ -1,4 +1,6 @@
-package com.techreturners.BubbleTeaOrderService;
+package com.techreturners.bubbleteaordersystem.service;
+
+import com.techreturners.bubbleteaordersystem.model.BubbleTeaTypeEnum;
 
 import java.util.Random;
 

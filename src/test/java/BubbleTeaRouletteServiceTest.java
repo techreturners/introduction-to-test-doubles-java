@@ -1,12 +1,12 @@
-import com.techreturners.BubbleTeaOrderService.BubbleTeaRouletteService;
-import com.techreturners.BubbleTeaOrderService.BubbleTeaTypeEnum;
+import com.techreturners.bubbleteaordersystem.service.BubbleTeaRouletteService;
+import com.techreturners.bubbleteaordersystem.model.BubbleTeaTypeEnum;
 
-import org.junit.Test;
-import testHelpers.RandomStub;
+import org.junit.jupiter.api.Test;
+import testhelper.RandomStub;
 
 import static org.junit.Assert.assertEquals;
 
-public class BubbleTeaRouletteServiceShould {
+public class BubbleTeaRouletteServiceTest {
 
     @Test
     public void generate_a_random_bubble_tea_type_when_getRandomBubbleTeaType_is_called() {
