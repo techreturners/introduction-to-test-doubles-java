@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 public class BubbleTeaOrderServiceShould {
 
     @Test
-    public void create_bubble_tea_order_request() {
+    public void create_bubble_tea_order_request_when_createOrderRequest_is_called() {
 
         //Arrange
         DebitCard testDebitCard = new DebitCard("0123456789");
