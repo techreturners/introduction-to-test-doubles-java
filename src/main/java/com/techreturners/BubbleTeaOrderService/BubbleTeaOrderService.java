@@ -8,20 +8,20 @@ public class BubbleTeaOrderService {
         this.simpleLogger = simpleLogger;
     }
 
-    public OrderRequest createOrderRequest(BubbleTeaRequest bubbleTeaRequest) {
+    public BubbleTeaOrderRequest createOrderRequest(BubbleTeaRequest bubbleTeaRequest) {
 
         simpleLogger.addLoggingText("Creating an Order Request for the " +
                 "following Bubble Tea Request " + bubbleTeaRequest.toString());
 
-        var orderRequest = new OrderRequest(
-            bubbleTeaRequest.getPaymentDetails().getName(),
-            bubbleTeaRequest.getPaymentDetails().getAddress(),
-            bubbleTeaRequest.getPaymentDetails().getDebitCard().getDigits(),
-            bubbleTeaRequest.getBubbleTea().getBubbleTeaType()
+        var orderRequest = new BubbleTeaOrderRequest(
+                bubbleTeaRequest.getPaymentDetails().getName(),
+                bubbleTeaRequest.getPaymentDetails().getAddress(),
+                bubbleTeaRequest.getPaymentDetails().getDebitCard().getDigits(),
+                bubbleTeaRequest.getBubbleTea().getBubbleTeaType()
         );
 
         simpleLogger.addLoggingText("The following Bubble Tea Order Request has been created "
-                + bubbleTeaRequest.toString());
+                + orderRequest.toString());
 
         return orderRequest;
 

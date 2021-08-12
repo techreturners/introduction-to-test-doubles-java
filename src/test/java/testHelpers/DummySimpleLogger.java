@@ -1,4 +1,4 @@
-package com.techreturners.BubbleTeaOrderService.tests.testHelpers;
+package testHelpers;
 
 import com.techreturners.BubbleTeaOrderService.SimpleLoggerImpl;
 

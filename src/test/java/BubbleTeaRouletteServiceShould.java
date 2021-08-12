@@ -1,9 +1,8 @@
-package com.techreturners.BubbleTeaOrderService.tests;
-
 import com.techreturners.BubbleTeaOrderService.BubbleTeaRouletteService;
 import com.techreturners.BubbleTeaOrderService.BubbleTeaTypeEnum;
-import com.techreturners.BubbleTeaOrderService.tests.testHelpers.RandomStub;
+
 import org.junit.Test;
+import testHelpers.RandomStub;
 
 import static org.junit.Assert.assertEquals;
 

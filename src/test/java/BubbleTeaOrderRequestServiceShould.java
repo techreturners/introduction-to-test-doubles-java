@@ -1,12 +1,10 @@
-package com.techreturners.BubbleTeaOrderService.tests;
-
 import com.techreturners.BubbleTeaOrderService.*;
-import com.techreturners.BubbleTeaOrderService.tests.testHelpers.DummySimpleLogger;
 import org.junit.Test;
+import testHelpers.DummySimpleLogger;
 
 import static org.junit.Assert.assertEquals;
 
-public class BubbleTeaOrderServiceShould {
+public class BubbleTeaOrderRequestServiceShould {
 
     @Test
     public void create_bubble_tea_order_request_when_createOrderRequest_is_called() {
@@ -22,9 +20,9 @@ public class BubbleTeaOrderServiceShould {
         BubbleTeaOrderService bubbleTeaOrderService = new BubbleTeaOrderService(dummySimpleLogger);
 
         //Act
-        OrderRequest result = bubbleTeaOrderService.createOrderRequest(bubbleTeaRequest);
+        BubbleTeaOrderRequest result = bubbleTeaOrderService.createOrderRequest(bubbleTeaRequest);
 
-        OrderRequest expectedResult = new OrderRequest(
+        BubbleTeaOrderRequest expectedResult = new BubbleTeaOrderRequest(
                 "hello kitty",
                 "sanrio puroland",
                 "0123456789",

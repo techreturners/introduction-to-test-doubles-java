@@ -1,13 +1,13 @@
 package com.techreturners.BubbleTeaOrderService;
 
-public class OrderRequest {
+public class BubbleTeaOrderRequest {
 
     private final String name;
     private final String address;
     private final String debitCardDigits;
     private final BubbleTeaTypeEnum bubbleTeaType;
 
-    public OrderRequest(
+    public BubbleTeaOrderRequest(
             String name,
             String address,
             String debitCardDigits,
