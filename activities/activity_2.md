@@ -65,7 +65,7 @@ Here's a summary of what we need to do for Arrange, Act, Assert:
 
 - **Assert**
   - Check that the result we get from calling the `BubbleTeaOrderService`'s `createOrderRequest` method 
-produces the expected `BubbleTeaOrderRequest`.
+produces the expected `BubbleTeaOrderRequest`
   
 
 - **Act** 
@@ -116,7 +116,7 @@ Dummies can be used in place of when you’re trying to pass parameters into you
   
 
 - Since the dependencies are external, we don’t have control on what this outside system might do. We want to make sure
-our SUT is working as a component of our codebase.
+our SUT is working as a component of our codebase without external influence.
   
 ---
 
@@ -139,7 +139,7 @@ as a Dummy.
 - Navigate to the [BubbleTeaOrderServiceTest.java](../src/test/java/BubbleTeaOrderServiceTest.java) file.
 
 
-- Can you identify the line of code where the `dummySimpleLogger` is being created?
+- Can you identify the line of code where the `DummySimpleLogger` is being created?
 
 <details>
 <summary>Click here to see the answer</summary>

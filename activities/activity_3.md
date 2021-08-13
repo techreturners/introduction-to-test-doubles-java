@@ -54,6 +54,7 @@ we send an email on line 32.
 - Navigate to the [BubbleTeaMessenger.java](../src/main/java/com/techreturners/bubbleteaordersystem/service/BubbleTeaMessenger.java) file
 which contains the `BubbleTeaMessenger` class.
   
+---
 
 - Why do you think we need to utilise a Mock for the `BubbleTeaMessenger` class?
 
@@ -87,6 +88,7 @@ want to be sending actual emails everytime we run our tests.
 
 - For Java, one useful framework is [Mockito](https://site.mockito.org/).
   
+---
 
 - In the [BubbleTeaOrderServiceTest.java](../src/test/java/BubbleTeaOrderServiceTest.java) file, can you spot which line
 creates the Mock for the `BubbleTeaMessenger`?
@@ -110,6 +112,7 @@ mockMessenger = mock(BubbleTeaMessenger.class);
 - Thanks to the Mockito framework, we now have access to methods to check (verify) that expected calls and actions have 
   been performed on the `mockMessenger`.
 
+---
 
 - In the [BubbleTeaOrderServiceTest.java](../src/test/java/BubbleTeaOrderServiceTest.java) file, which line of code
 verifies that the `mockMessenger`'s `sendBubbleTeaOrderRequestEmail()` method was called with the `BubbleTeaOrderRequest`?
@@ -124,8 +127,9 @@ verify(mockMessenger).sendBubbleTeaOrderRequestEmail(result);
 </pre>
 </details>
 
-- We can also verify the number of times the `mockMessenger`'s `sendBubbleTeaOrderRequestEmail()` method was called on
-our `mockMessenger`.
+---
+
+- We can also verify the number of times the `mockMessenger`'s `sendBubbleTeaOrderRequestEmail()` method was called
   
 ```
 

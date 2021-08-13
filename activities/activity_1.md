@@ -13,11 +13,13 @@ For this exercise, spend some time familarising yourself with the code.
 
 - 📖 So, flex those reading muscles! 💪
 
-- 💡 Top Tip: Try looking at the [README](../README.md) file first.
+```
+💡 Top Tip: Try looking at the [README](../README.md) file first.
   Diagramming / sketching things out can be a handy way of
 visualising a codebase that you haven't seen before. It can help you
   focus on the key information rather than getting lost in the details
   too soon.
+```
   
 ---
 
@@ -126,7 +128,8 @@ public String getDigits() {
 
 ```
 
-The getter `getDigits` has a private backing field `private final String DIGITS;`.
+The getter `getDigits` has a private backing field `private final String DIGITS;`
+
 This keeps the class well-encapsulated, so that the Debit Card Digits won't be tampered with
 after it's been set by the constructor.
 

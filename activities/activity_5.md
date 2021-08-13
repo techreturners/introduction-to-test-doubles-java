@@ -36,6 +36,7 @@ spiedMessenger = spy(new BubbleTeaMessenger(dummySimpleLogger));
 </pre>
 </details>
 
+
 - This differs from the Mock object because it is our actual `BubbleTeaMessenger` in action here and it
 has been infiltrated! 😬
   
@@ -62,3 +63,8 @@ You have now completed the activities!
 
 Feel free to head back to review the concepts again.
 We encourage you to do some of your own research and experimentation in your own time to explore these concepts further.
+
+### Extension
+
+- Can you find a way to test multiple different Bubble Tea Requests without having to repeat the same test code again
+and again? **Hint**: You may want to have a think about test parameterisation

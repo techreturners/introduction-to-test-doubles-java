@@ -34,9 +34,9 @@ We replace the real-life functionality to provide the values we need for testing
 - 😬 Oh no! There's an issue here, if the `getRandomBubbleTeaType` is random, we're in a bit of a pickle.
   
 
-- For our testing, we want to make sure we get the same Bubble Tea Type every time we run our test
-  (i.e. it's deterministic); however since the method chooses a Bubble Tea Type at random,
-  we have no way of ensuring if the method returns a Bubble Tea Type correctly.
+- For our testing, we want to make sure we get the same type of Bubble Tea every time we run our test
+  (i.e. it's deterministic); however since the method chooses one at random,
+  we have no way of ensuring if the method returns a type of Bubble Tea correctly.
   
 - A way to resolve this is to use a Stub.
   
@@ -47,7 +47,9 @@ We replace the real-life functionality to provide the values we need for testing
 - On [RandomStub](../src/test/java/testhelper/RandomStub.java), we control the return value of the `nextInt` method
 using a pre-defined integer value.
   
+
 - Navigate to the [BubbleTeaRouletteServiceTest](../src/test/java/BubbleTeaRouletteServiceTest.java) file.
+
 
 - Can you add another unit test so that the `getRandomBubbleTeaType()` method is stubbed to return
 `PeachIceTea`?
