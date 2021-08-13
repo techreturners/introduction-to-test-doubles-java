@@ -9,10 +9,10 @@ import static org.junit.Assert.assertEquals;
 public class BubbleTeaRouletteServiceTest {
 
     @Test
-    public void generate_a_random_bubble_tea_type_when_getRandomBubbleTeaType_is_called() {
+    public void shouldGenerateARandomBubbleTeaTypeWhenGetRandomBubbleTeaTypeIsCalled() {
 
         //Arrange
-        RandomStub randomStub = new RandomStub(1);
+        RandomStub randomStub = new RandomStub(BubbleTeaTypeEnum.JasmineMilkTea.ordinal());
         BubbleTeaRouletteService bubbleTeaRouletteService = new BubbleTeaRouletteService(randomStub);
 
         //Act

@@ -2,9 +2,6 @@ package testhelper;
 
 import java.util.Random;
 
-//This is a RandomStub
-//Represents the Test Double type Stub
-
 public class RandomStub extends Random {
 
     private int value;

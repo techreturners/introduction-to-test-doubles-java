@@ -27,7 +27,7 @@ public class BubbleTeaOrderRequestServiceSpyTest {
     }
 
     @Test
-    public void create_bubble_tea_order_request_when_createOrderRequest_is_called() {
+    public void shouldCreateBubbleTeaOrderRequestWhenCreateOrderRequestIsCalled() {
 
         //Arrange
         BubbleTea bubbleTea = new BubbleTea(BubbleTeaTypeEnum.MatchaMilkTea, 6.78);
@@ -37,7 +37,8 @@ public class BubbleTeaOrderRequestServiceSpyTest {
                 "hello kitty",
                 "sanrio puroland",
                 "0123456789",
-                BubbleTeaTypeEnum.MatchaMilkTea);
+                BubbleTeaTypeEnum.MatchaMilkTea
+        );
 
         //Act
         BubbleTeaOrderRequest result = bubbleTeaOrderService.createOrderRequest(bubbleTeaRequest);
