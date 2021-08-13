@@ -27,6 +27,24 @@
 
 ---
 
+## 🔎 Exercise 3.2 - Recap - What is a Mock?
+
+Firstly, let's remind ourselves what a Mock is.
+
+- Can you remember what a Mock means?
+
+<details>
+<summary>Click here to see the answer</summary>
+<pre>
+
+Mock objects enable you to check (verify) that expected calls and actions have been performed, 
+e.g. checking a function/method has been called an expected number of times.
+
+</pre>
+</details>
+
+---
+
 #### Why are we using a Mock?
 
 - On the [BubbleTeaOrderService](../src/main/java/com/techreturners/bubbleteaordersystem/service/BubbleTeaOrderService.java),
@@ -61,7 +79,7 @@ want to be sending actual emails everytime we run our tests.
 
 ---
 
-#### 🏊 Deep Diving into Mocks
+### 🔎 Exercise 3.3 - 🏊 Deep Diving into Mocks
 
 - Each programming language will have frameworks to enable developers to use out of the box methods to create
   and apply test doubles.
@@ -88,8 +106,10 @@ mockMessenger = mock(BubbleTeaMessenger.class);
 
 - We now have a Mock object of the `BubbleTeaMessenger` referenced by the reference variable `mockMessenger`.
   
+
 - Thanks to the Mockito framework, we now have access to methods to check (verify) that expected calls and actions have 
   been performed on the `mockMessenger`.
+
 
 - In the [BubbleTeaOrderServiceTest.java](../src/test/java/BubbleTeaOrderServiceTest.java) file, which line of code
 verifies that the `mockMessenger`'s `sendBubbleTeaOrderRequestEmail()` method was called with the `BubbleTeaOrderRequest`?
@@ -118,4 +138,4 @@ All this means is that we aren't sending out real emails to our users when we ru
 ---
 ### 🥳 Nice one! You finished Activity 3!
 
-You can now head over to [Activity 4 - Test Doubles - Spy](activity_4.md).
+You can now head over to [Activity 4 - Test Doubles - Stub](activity_4.md).
