@@ -9,7 +9,7 @@ import testhelper.DummySimpleLogger;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
-public class BubbleTeaOrderRequestServiceSpyTest {
+public class BubbleTeaOrderServiceSpyTest {
 
     private DebitCard testDebitCard;
     private PaymentDetails paymentDetails;

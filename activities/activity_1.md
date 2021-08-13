@@ -23,6 +23,19 @@ visualising a codebase that you haven't seen before. It can help you
 
 ## 🔎 Exercise 1.2 - Questions
 
+- What is a Test Double?
+
+<details>
+<summary>Click here to see the answer</summary>
+<pre>
+
+A test double is any kind of pretend object used in place of a real object for testing purposes.
+
+</pre>
+</details>
+
+---
+
 - In the [test](../src/test) folder, can you identify the name of the file
   that contains the class that represents the test double type, 'Dummy'?
 
@@ -103,7 +116,7 @@ Encapsulation means hiding the details of an object which is not supposed to be 
 <summary>Click here to see the answer</summary>
 <pre>
 
-Line 11
+DebitCard - Line 11
 
 ```
 
