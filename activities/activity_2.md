@@ -45,7 +45,7 @@ we would like a unit test to check that:
   
   - **Given** a `BubbleTeaRequest`
   - **When** the `BubbleTeaOrderService`'s `createOrderRequest()` method is called with that `BubbleTeaRequest`
-  - **Then** a `BubbleTeaOrderRequest` is created successfully
+  - **Then** a `BubbleTeaOrderRequest` is created successfully, and the BubbleTeaOrderRequest is sent over email ✉️
   
 ```
 💡Top Tip!
