@@ -47,6 +47,8 @@ We replace the real-life functionality to provide the values we need for testing
 - On [RandomStub](../src/test/java/testhelper/RandomStub.java), we control the return value of the `nextInt` method
 using a pre-defined integer value.
   
+TODO: KD to add a before and after here to show how the Random is stubbed (exercise)
+  
 
 - Navigate to the [BubbleTeaRouletteServiceTest](../src/test/java/BubbleTeaRouletteServiceTest.java) file.
 

@@ -193,3 +193,19 @@ You can see that it isn't doing anything with the method.
 
 You can now head over to [Activity 3 - Test Doubles - Mock](activity_3.md).
 Remember to take a break though 🍵!
+
+---
+
+### Key Study Notes
+
+☑️ Make sure you understand the business acceptance criteria before you start coding!
+- Use the **Given, When, Then** approach to understand what you need to test for
+
+☑️ Write down some test scenarios against these acceptance criteria
+
+☑️ Identify what your System Under Test (SUT) is, this is the thing you are focusing your tests on
+
+☑️ Pick one test scenario and use the `Arrange, Act, Assert` structure to help you write your test
+- Start with your assertion first to identify what you are checking for
+
+☑️ Identify any external dependencies your SUT has, you can consider using one of the Test Doubles to substitute in for these
