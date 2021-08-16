@@ -95,8 +95,6 @@ public class BubbleTeaRouletteService {
   a `Random` object a dependency. This means that whenever we need to create a `BubbleTeaRouletteService`, we would need
   to provide it with an object of type `Random` to use. A terminology people use for this is Dependency Injection.
 
-}
-
 </pre>
 </details>
 

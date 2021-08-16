@@ -11,6 +11,7 @@ public class RandomStub extends Random {
     }
 
     //has same method signature as Random.nextInt to provide a RandomStub.nextInt implementation
+    @Override
     public int nextInt(int value) {
         return this.value;
     }
