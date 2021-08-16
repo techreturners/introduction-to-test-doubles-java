@@ -208,4 +208,8 @@ Remember to take a break though 🍵!
 ☑️ Pick one test scenario and use the `Arrange, Act, Assert` structure to help you write your test
 - Start with your assertion first to identify what you are checking for
 
-☑️ Identify any external dependencies your SUT has, you can consider using one of the Test Doubles to substitute in for these
+☑️ Identify any external dependencies your SUT has, you can consider using one of the Test Doubles to substitute in for 
+these
+
+☑️ A Dummy is a test double. It is an object that is there to make the code run, it doesn’t do anything.
+Dummies can be used in place of when you’re trying to pass parameters into your function/object.

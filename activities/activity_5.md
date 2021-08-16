@@ -12,7 +12,7 @@ Firstly, let's remind ourselves what a Spy is.
 <summary>Click here to see the answer</summary>
 <pre>
 
-Spies enable you to focus in (spy on) specific methods on a real object. We call this object the ‘spied object’.
+Spies enable you to focus (spy on) specific methods on a real object. We call this object the ‘spied object’.
 
 </pre>
 </details>
@@ -67,4 +67,9 @@ We encourage you to do some of your own research and experimentation in your own
 ### Extension
 
 - Can you find a way to test multiple different Bubble Tea Requests without having to repeat the same test code again
-and again? **Hint**: You may want to have a think about test parameterisation
+and again? **Hint**: You may want to have a think about test parameterisation.
+  
+---
+### Key Study Notes
+
+☑️ A Spy enables you to focus (spy on) specific methods on a real object. We call this object the ‘spied object’.

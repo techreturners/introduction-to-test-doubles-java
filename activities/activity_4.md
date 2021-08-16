@@ -33,6 +33,78 @@ We replace the real-life functionality to provide the values we need for testing
 
 - 😬 Oh no! There's an issue here, if the `getRandomBubbleTeaType` is random, we're in a bit of a pickle.
   
+---
+
+- Is there something you notice about the Random object and how it's used here?
+
+<details>
+<summary>Click to consider the following code</summary>
+<pre>
+
+```java
+public class BubbleTeaRouletteService {
+
+    private final int SIZE = BubbleTeaTypeEnum.values().length;
+
+    public BubbleTeaRouletteService() {
+    }
+
+    public BubbleTeaTypeEnum getRandomBubbleTeaType() {
+        Random random = new Random();
+        return BubbleTeaTypeEnum.values()[random.nextInt(SIZE)];
+    }
+    
+}
+
+```
+
+- Notice that the statement `Random random = new Random();` is within the `getRandomBubbleTeaType()` method.
+- This code will still work as expected, however, for unit testing, it wouldn't be possible to control `Random`
+  to provide the values we would like for our test scenarios. This is because every time we call `getRandomBubbleTeaType()`,
+  we get a new instance of `Random`.
+
+</pre>
+</details>
+
+<details>
+<summary>Click to discover an alternative</summary>
+<pre>
+
+```java
+
+public class BubbleTeaRouletteService {
+
+  //We define a RANDOM field
+  private final Random RANDOM;
+  private final int SIZE = BubbleTeaTypeEnum.values().length;
+
+  //Constructor
+  //We've chosen to enable the BubbleTeaRouletteService to be set with an object of type Random
+  public BubbleTeaRouletteService(Random random) {
+    this.RANDOM = random;
+  }
+
+  public BubbleTeaTypeEnum getRandomBubbleTeaType() {
+    return BubbleTeaTypeEnum.values()[RANDOM.nextInt(SIZE)];
+  }
+  
+}
+
+```
+- By changing the `BubbleTeaRouletteService`'s constructor to take in a `Random` object as a parameter, we make
+  a `Random` object a dependency. This means that whenever we need to create a `BubbleTeaRouletteService`, we would need
+  to provide it with an object of type `Random` to use. A terminology people use for this is Dependency Injection.
+
+}
+
+</pre>
+</details>
+
+
+---
+
+- The comparisons above show why considering how you test something first before you code can be a handy way of 
+  guiding how you can design code that is testable.
 
 - For our testing, we want to make sure we get the same type of Bubble Tea every time we run our test
   (i.e. it's deterministic); however since the method chooses one at random,
@@ -44,11 +116,9 @@ We replace the real-life functionality to provide the values we need for testing
 
 #### 🗺 Explore the `RandomStub`
 
-- On [RandomStub](../src/test/java/testhelper/RandomStub.java), we control the return value of the `nextInt` method
-using a pre-defined integer value.
-  
-TODO: KD to add a before and after here to show how the Random is stubbed (exercise)
-  
+- In the [RandomStub](../src/test/java/testhelper/RandomStub.java), we control the return value of the `nextInt` method
+using a pre-defined integer value. The `RandomStub` can do this because it extends the `Random` class and overrides
+  the `nextInt` method.
 
 - Navigate to the [BubbleTeaRouletteServiceTest](../src/test/java/BubbleTeaRouletteServiceTest.java) file.
 
@@ -83,3 +153,10 @@ TODO: KD to add a before and after here to show how the Random is stubbed (exerc
 ### 🥳 Wow! You finished Activity 4! The next activity is the final activity!
 
 You can now head over to [Activity 5 - Test Doubles - Spy](activity_5.md).
+
+---
+
+### Key Study Notes
+
+☑️ A Stub is an object designed with methods returning hardcoded/pre-defined responses. 
+We replace the real-life functionality to provide the values we need for testing purposes.

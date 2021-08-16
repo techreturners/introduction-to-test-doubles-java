@@ -143,3 +143,10 @@ All this means is that we aren't sending out real emails to our users when we ru
 ### 🥳 Nice one! You finished Activity 3!
 
 You can now head over to [Activity 4 - Test Doubles - Stub](activity_4.md).
+
+---
+
+### Key Study Notes
+
+☑️ Mock objects enable you to check (verify) that expected calls and actions have been performed,
+e.g. checking a function/method has been called an expected number of times.
