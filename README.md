@@ -17,13 +17,13 @@ You will be exploring a simplified version of a Bubble Tea Order Service System.
 
 ## Pre-Requisites
 
-- Java SE Development Kit 15
+- Java SE Development Kit 15 (The Maven pom.xml specifies version 15, but the code should work against version 11 upwards).
 - Maven
 
 ## How to Get Started
 
-1. Fork this repo
-2. Work through the activities in the activities folder starting with [Activity 1](/activities/activity_1.md).
+1. Fork this repo to your Github and then clone the forked version of this repo
+2. Work through the activities in the activities folder starting with [Activity 1](./activities/activity_1.md).
 
 ### Running the Unit Tests
 

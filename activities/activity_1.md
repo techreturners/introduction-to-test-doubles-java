@@ -14,7 +14,7 @@ For this exercise, spend some time familarising yourself with the code.
 - 📖 So, flex those reading muscles! 💪
 
 ```
-💡 Top Tip: Try looking at the [README](../README.md) file first.
+💡 Top Tip: Try looking at the README file first.
   Diagramming / sketching things out can be a handy way of
 visualising a codebase that you haven't seen before. It can help you
   focus on the key information rather than getting lost in the details
