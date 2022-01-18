@@ -102,13 +102,13 @@ Dummies can be used in place of when you’re trying to pass parameters into you
 ### 💭 Let's break it down!
 
 - In the production code, the constructor for the [BubbleTeaOrderService](../src/main/java/com/techreturners/bubbleteaordersystem/service/BubbleTeaOrderService.java)
-  class needs two parameters (an object of type `SimpleLoggerImpl`, an object of type `BubbleTeaMessenger`).
+  class needs two parameters (an object of type `SimpleLogger`, an object of type `BubbleTeaMessenger`).
   
 #### 🤔 Why is this important to know?
 
 - Since our System Under Test (SUT), i.e. the thing we are focusing on for our unit test,
   is the [BubbleTeaOrderService](../src/main/java/com/techreturners/bubbleteaordersystem/service/BubbleTeaOrderService.java), we would like to use Test Doubles as pretend objects to
-  stand in place of the real [SimpleLoggerImpl](../src/main/java/com/techreturners/bubbleteaordersystem/model/SimpleLoggerImpl.java) and
+  stand in place of the real [SimpleLogger](../src/main/java/com/techreturners/bubbleteaordersystem/model/SimpleLogger.java) and
   [BubbleTeaMessenger](../src/main/java/com/techreturners/bubbleteaordersystem/service/BubbleTeaMessenger.java) objects for testing purposes.
   
 
@@ -126,7 +126,7 @@ our SUT is working as a component of our codebase without external influence.
 point is that you understand what is needed to test against your acceptance criteria.
 
 
-- For demonstration purposes, we've chosen to use a Dummy to substitute in place of the `SimpleLoggerImpl`. 
+- For demonstration purposes, we've chosen to use a Dummy to substitute in place of the `SimpleLogger`. 
   
 
 - In [Activity 1](activity_1.md), we identified the `DummySimpleLogger`
@@ -165,7 +165,7 @@ argument to the `BubbleTeaOrderService` constructor?
 
 bubbleTeaOrderService = new BubbleTeaOrderService(dummySimpleLogger, mockMessenger);
 
-👉 The `dummySimpleLogger` is a Dummy that's solely there to stand in for the `SimpleLoggerImpl` parameter.
+👉 The `dummySimpleLogger` is a Dummy that's solely there to stand in for the `SimpleLogger` parameter.
 
 </pre>
 </details>
@@ -181,7 +181,7 @@ bubbleTeaOrderService = new BubbleTeaOrderService(dummySimpleLogger, mockMesseng
 <summary>Click here to see a summary</summary>
 <pre>
 
-The `DummySimpleLogger` implements the `SimpleLoggerImpl` interface.
+The `DummySimpleLogger` implements the `SimpleLogger` interface.
 It has a `addLoggingText` method.
 You can see that it isn't doing anything with the method.
 

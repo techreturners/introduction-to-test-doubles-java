@@ -17,10 +17,10 @@
 ### 🔎 Exercise 3.1 - Let's see a Mock in action!
 
 - To recap, the constructor for the [BubbleTeaOrderService](../src/main/java/com/techreturners/bubbleteaordersystem/service/BubbleTeaOrderService.java)
-  class needs two parameters (an object of type `SimpleLoggerImpl`, an object of type `BubbleTeaMessenger`).
+  class needs two parameters (an object of type `SimpleLogger`, an object of type `BubbleTeaMessenger`).
   
 
-- Now that we have a Dummy object to stand in place of our `SimpleLoggerImpl`, our next step is to find the appropriate
+- Now that we have a Dummy object to stand in place of our `SimpleLogger`, our next step is to find the appropriate
   Test Double type to stand in place of the `BubbleTeaMessenger`.
   
 - The Test Double type we will be using to sit in place of the `BubbleTeaMessenger` is a Mock object.
