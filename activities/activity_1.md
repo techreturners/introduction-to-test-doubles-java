@@ -73,7 +73,7 @@ RandomStub.java
 <summary>Click here to see the answer</summary>
 <pre>
 
-- An object of type `SimpleLoggerImpl`
+- An object of type `SimpleLogger`
 - An object of type `BubbleTeaMessenger`
 
 </pre>
